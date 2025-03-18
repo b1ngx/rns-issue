@@ -32,7 +32,12 @@ const MyStack = createNativeStackNavigator({
     headerTitleAlign: 'center',
   },
   screens: {
-    Home: HomeScreen,
+    Home: {
+      screen: HomeScreen,
+      options: {
+        headerShown: false,
+      },
+    },
     Profile: ProfileScreen,
   },
 });
